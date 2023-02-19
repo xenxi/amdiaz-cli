@@ -2,9 +2,11 @@
   "name": "bio-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/bio.js",
   "scripts": {
-    "test": "test"
+    "dev": "tsc -w",
+    "build": "tsc",
+    "test": "npm run build && node ./dist/bio.js"
   },
   "repository": {
     "type": "git",
