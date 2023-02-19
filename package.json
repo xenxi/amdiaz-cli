@@ -3,6 +3,7 @@
   "version": "1.0.3-beta",
   "description": "The bio-cli package is a command line interface tool that displays a brief summary of a developer",
   "main": "./dist/src/bio.js",
+  "type": "module",
   "bin": {
     "amdiaz": "./dist/src/bio.js"
   },
@@ -11,7 +12,8 @@
     "build": "tsc",
     "build:watch": "tsc -w",
     "dev": "npm run build && npm run start",
-    "dev:watch": "concurrently \"npm run build:watch\" \"npx nodemon --watch ./dist/src/bio.js --exec node ./dist/src/bio.js\""
+    "dev:watch": "concurrently \"npm run build:watch\" \"npx nodemon --watch ./dist/src/bio.js --exec node ./dist/src/bio.js\"",
+    "pub": "npm run build && npm version minor & npm publish"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,6 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "boxen": "^5.1.2"
+    "boxen": "^7.0.1"
   }
 }
