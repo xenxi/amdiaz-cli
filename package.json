@@ -1,6 +1,6 @@
 {
   "name": "amdiaz",
-  "version": "1.0.1-beta",
+  "version": "1.0.2-beta",
   "description": "The bio-cli package is a command line interface tool that displays a brief summary of a developer",
   "main": "./dist/src/bio.js",
   "bin": {
@@ -34,7 +34,6 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "boxen": "^5.1.2",
-    "chalk-animation": "^2.0.3"
+    "boxen": "^5.1.2"
   }
 }
