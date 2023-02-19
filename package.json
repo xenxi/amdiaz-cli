@@ -1,0 +1,27 @@
+{
+  "name": "bio-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xenxi/bio-cli.git"
+  },
+  "keywords": [
+    "amdiaz",
+    "resume",
+    "about"
+  ],
+  "author": "amdiaz (https://antoniomdm.dev/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xenxi/bio-cli/issues"
+  },
+  "homepage": "https://github.com/xenxi/bio-cli#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
