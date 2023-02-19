@@ -1,5 +1,4 @@
 import boxen from "boxen";
-
 console.log(
   boxen("hello world!! 👀", {
     title: "xenxi",
