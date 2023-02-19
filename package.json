@@ -2,13 +2,13 @@
   "name": "amdiaz",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/bio.js",
+  "main": "./dist/src/bio.js",
   "scripts": {
-    "start": "node dist/bio.js",
+    "start": "node dist/src/bio.js",
     "build": "tsc",
     "build:watch": "tsc -w",
     "dev": "npm run build && npm run start",
-    "dev:watch": "concurrently \"npm run build:watch\" \"npx nodemon --watch ./dist/bio.js --exec node ./dist/bio.js\""
+    "dev:watch": "concurrently \"npm run build:watch\" \"npx nodemon --watch ./dist/src/bio.js --exec node ./dist/src/bio.js\""
   },
   "repository": {
     "type": "git",
