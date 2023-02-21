@@ -6,8 +6,12 @@ export class ProfileConsolePresenter {
   public static print(profile: DeveloperProfile): string {
     const body = this.buildBody(profile);
 
-    return boxen(body, {
-      title: "xenxi",
+    return this.frameText({ text: body, title: "xenxi" });
+  }
+
+  private static frameText(params: { text: string; title: string }): string {
+    return boxen(params.text, {
+      title: params.title,
       titleAlignment: "center",
       padding: 1,
       borderColor: "green",
@@ -35,7 +39,7 @@ export class ProfileConsolePresenter {
       labelCard: chalk.white.bold("       Card:"),
     };
 
-    const body = [
+    return [
       `${profileFormated.name}\n`,
       `${profileFormated.labelWork}  ${profileFormated.work}\n`,
       `${profileFormated.labelGitHub}  ${profileFormated.github}`,
@@ -46,7 +50,5 @@ export class ProfileConsolePresenter {
         "I would like to become proficient in software development and ensure that I'm doing it right"
       )}`,
     ].join("\n");
-    return body;
   }
 }
-
