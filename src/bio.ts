@@ -12,6 +12,6 @@ const profile: DeveloperProfile = {
   consoleCommand: "amdiaz",
 };
 const formattedProfile = ProfileConsolePresenter.print(profile, {
-  title: "xenxi",
+  title: "andiaz",
 });
 console.log(formattedProfile);

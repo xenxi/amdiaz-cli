@@ -23,7 +23,7 @@ export class ProfileConsolePresenter {
   }
   private static buildBody(profile: DeveloperProfile): string {
     const profileFormated = {
-      name: chalk.bold.green(`             ${profile.name}`),
+      name: chalk.bold.green(`              ${profile.name}`),
       work: `${chalk.white(`${profile.profession} at`)} ${chalk
         .hex("#2b82b2")
         .bold("AIDA")}`,
