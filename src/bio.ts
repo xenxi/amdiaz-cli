@@ -11,6 +11,7 @@ const profile: DeveloperProfile = {
   websiteUrl: "https://antoniomdm.dev/",
   consoleCommand: "amdiaz",
 };
-const formattedProfile = ProfileConsolePresenter.print(profile); 
-
+const formattedProfile = ProfileConsolePresenter.print(profile, {
+  title: "xenxi",
+});
 console.log(formattedProfile);

@@ -3,10 +3,13 @@ import chalk from "chalk";
 import { DeveloperProfile } from "./developer-profile.js";
 
 export class ProfileConsolePresenter {
-  public static print(profile: DeveloperProfile): string {
+  public static print(
+    profile: DeveloperProfile,
+    params: { title: string }
+  ): string {
     const body = this.buildBody(profile);
 
-    return this.frameText({ text: body, title: "xenxi" });
+    return this.frameText({ text: body, title: params.title });
   }
 
   private static frameText(params: { text: string; title: string }): string {
