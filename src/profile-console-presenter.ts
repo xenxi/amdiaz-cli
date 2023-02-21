@@ -21,6 +21,18 @@ export class ProfileConsolePresenter {
       borderStyle: "single",
     });
   }
+  private static formatText(params: {
+    label: string;
+    text: string;
+    highlightedText: string;
+  }): string {
+    const formattedLabel = chalk.white.bold(params.label.padStart(12, " "));
+    const formattedText = chalk.gray(params.text);
+    const formattedHighlightedText = chalk.green(params.highlightedText);
+
+    return `${formattedLabel}  ${formattedText}${formattedHighlightedText}`;
+  }
+
   private static buildBody(profile: DeveloperProfile): string {
     const profileFormated = {
       name: chalk.bold.green(`              ${profile.name}`),
@@ -45,7 +57,11 @@ export class ProfileConsolePresenter {
     return [
       `${profileFormated.name}\n`,
       `${profileFormated.labelWork}  ${profileFormated.work}\n`,
-      `${profileFormated.labelGitHub}  ${profileFormated.github}`,
+      this.formatText({
+        label: "GitHub:",
+        text: "https://github.com/",
+        highlightedText: profile.githubName,
+      }),
       `${profileFormated.labelLinkedIn}  ${profileFormated.linkedin}`,
       `${profileFormated.labelWeb}  ${profileFormated.web}\n`,
       `${profileFormated.labelCard}  ${profileFormated.npx}\n`,
