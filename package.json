@@ -35,10 +35,12 @@
   },
   "homepage": "https://github.com/xenxi/bio-cli#readme",
   "devDependencies": {
+    "@types/inquirer": "^9.0.3",
     "concurrently": "^7.6.0",
     "nodemon": "^2.0.20"
   },
   "dependencies": {
-    "boxen": "^7.0.1"
+    "boxen": "^7.0.1",
+    "inquirer": "^9.1.4"
   }
 }
