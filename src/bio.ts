@@ -2,6 +2,7 @@
 import { DeveloperProfile } from "./developer-profile.js";
 import { ProfileConsolePresenter } from "./profile-console-presenter.js";
 
+console.clear();
 const profile: DeveloperProfile = {
   name: "Antonio Manuel Díaz Moreno",
   profession: "Software developer",
