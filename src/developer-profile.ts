@@ -6,4 +6,5 @@ export interface DeveloperProfile {
   githubName: string;
   websiteUrl: string;
   consoleCommand: string;
+  email: string;
 }
