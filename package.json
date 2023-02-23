@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "boxen": "^7.0.1",
-    "inquirer": "^9.1.4"
+    "inquirer": "^9.1.4",
+    "open": "^8.4.2"
   }
 }
