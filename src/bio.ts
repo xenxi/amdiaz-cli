@@ -14,6 +14,7 @@ const profile: DeveloperProfile = {
   websiteUrl: "https://antoniomdm.dev/",
   consoleCommand: "amdiaz",
   email: "antoniom.diaz.moreno@gmail.com",
+  meetingUrl: "https://calendly.com/antoniom-diaz-moreno/30min"
 };
 const formattedProfile = ProfileConsolePresenter.print(profile, {
   title: "👋 Hello world",
@@ -34,7 +35,8 @@ const choices: Answers[] = [
   {
     name: "📅 Plan a coffee (or tea) talk!",
     value: () => {
-      console.log("meeting");
+      open(profile.meetingUrl);
+      console.log("\nI'll see you at the meeting! Don't forget to bring your coffee (or tea) \n");
     },
   },
   {

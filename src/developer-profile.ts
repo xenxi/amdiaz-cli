@@ -5,6 +5,7 @@ export interface DeveloperProfile {
   linkedinName: string;
   githubName: string;
   websiteUrl: string;
+  meetingUrl: string;
   consoleCommand: string;
   email: string;
 }
