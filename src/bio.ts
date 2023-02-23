@@ -42,13 +42,13 @@ const choices: Answers[] = [
   {
     name: "👀 Take a peek at my work wizardry!",
     value: () => {
-      console.log("resume");
+      console.log("\nThe elusive resume seems to have vanished, but fear not! It's a work in progress, so stay tuned and watch this space!\n");
     },
   },
   {
     name: "👋 Goodbye, world..",
     value: () => {
-      console.log("exit");
+      console.log("\nWishing you a debugging-free day. See you in the next coding adventure!\n");
     },
   },
 ];
