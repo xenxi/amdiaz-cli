@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { CardPrinter } from "./card-printer.js";
-import { DeveloperProfile } from "./developer-profile.js";
-import { PromptMenuPrinter } from "./prompt-menu-printer.js";
+import { CardPrinter } from "./content/card-printer.js";
+import { DeveloperProfile } from "./content/developer-profile.js";
+import { PromptMenuPrinter } from "./content/prompt-menu-printer.js";
 
 const profile: DeveloperProfile = {
   name: "Antonio Manuel Díaz Moreno",
