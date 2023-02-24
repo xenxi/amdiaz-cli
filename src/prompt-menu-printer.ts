@@ -2,7 +2,7 @@ import inquirer, { Answers, PromptModule, QuestionCollection } from "inquirer";
 import open from "open";
 import { DeveloperProfile } from "./developer-profile.js";
 
-export class PromptMenu {
+export class PromptMenuPrinter {
   private readonly prompt: PromptModule;
   constructor(private profile: DeveloperProfile) {
     this.prompt = inquirer.createPromptModule();

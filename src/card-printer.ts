@@ -1,7 +1,7 @@
 import { DeveloperProfile } from "./developer-profile.js";
 import { ProfileConsolePresenter } from "./profile-console-presenter.js";
 
-export class Card {
+export class CardPrinter {
   constructor(private profile: DeveloperProfile) {}
   public print(boxTitle: string): void {
     console.clear();
