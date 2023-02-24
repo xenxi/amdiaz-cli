@@ -1,9 +1,8 @@
 #!/usr/bin/env node
+import { Card } from "./card.js";
 import { DeveloperProfile } from "./developer-profile.js";
-import { ProfileConsolePresenter } from "./profile-console-presenter.js";
 import { PromptMenu } from "./prompt-menu.js";
 
-console.clear();
 const profile: DeveloperProfile = {
   name: "Antonio Manuel Díaz Moreno",
   profession: "Software developer",
@@ -15,10 +14,6 @@ const profile: DeveloperProfile = {
   email: "antoniom.diaz.moreno@gmail.com",
   meetingUrl: "https://calendly.com/antoniom-diaz-moreno/30min",
 };
-const formattedProfile = ProfileConsolePresenter.print(profile, {
-  title: "👋 Hello world",
-});
-console.log(formattedProfile);
 
-const menu = new PromptMenu(profile);
-await menu.show();
+new Card(profile).print("👋 Hello world");
+new PromptMenu(profile).show();
