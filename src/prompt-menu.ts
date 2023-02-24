@@ -7,7 +7,12 @@ export class PromptMenu {
   constructor(private profile: DeveloperProfile) {
     this.prompt = inquirer.createPromptModule();
   }
-  public show(): void {
+  public async show(): Promise<void> {
+    const questions = this.createQuestions();
+    await this.printMenu(questions);
+  }
+
+  private createQuestions(): QuestionCollection {
     const choices: Answers[] = [
       {
         name: "📧 Send a digital carrier pigeon!",
@@ -54,6 +59,10 @@ export class PromptMenu {
       },
     ];
 
-    this.prompt(questions).then((answer) => answer.action());
+    return questions;
+  }
+  private async printMenu(questions: QuestionCollection): Promise<void> {
+    const answer = await this.prompt(questions);
+    answer.action();
   }
 }
