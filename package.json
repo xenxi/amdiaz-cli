@@ -1,7 +1,7 @@
 {
   "name": "amdiaz",
   "version": "1.0.11-beta.0",
-  "description": "The bio-cli package is a command line interface tool that displays a brief summary of a developer",
+  "description": "The amdiaz-cli package is a command line interface tool that displays a brief summary of amdiaz as a developer",
   "main": "dist/bio.js",
   "bin": "dist/bio.js",
   "type": "module",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xenxi/bio-cli.git"
+    "url": "git+https://github.com/xenxi/amdiaz-cli.git"
   },
   "keywords": [
     "amdiaz",
@@ -31,9 +31,9 @@
   "author": "amdiaz (https://antoniomdm.dev/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xenxi/bio-cli/issues"
+    "url": "https://github.com/xenxi/amdiaz-cli/issues"
   },
-  "homepage": "https://github.com/xenxi/bio-cli#readme",
+  "homepage": "https://github.com/xenxi/amdiaz-cli#readme",
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
     "concurrently": "^7.6.0",
