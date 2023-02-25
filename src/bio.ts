@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-import { CardPrinter } from "./content/card-printer.js";
 import { DeveloperProfile } from "./content/developer-profile.js";
-import { PromptMenuPrinter } from "./content/prompt-menu-printer.js";
+import { printCard } from "./content/bio-printer";
 
 const profile: DeveloperProfile = {
   name: "Antonio Manuel Díaz Moreno",
@@ -15,5 +14,4 @@ const profile: DeveloperProfile = {
   meetingUrl: "https://calendly.com/antoniom-diaz-moreno/30min",
 };
 
-new CardPrinter(profile).print("👋 Hello world");
-new PromptMenuPrinter(profile).show();
+printCard(profile);
