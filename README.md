@@ -1,4 +1,5 @@
 # Bio-cli
+[![npx amdiaz](https://img.shields.io/badge/npx-amdiaz-red?logo=npm)](https://www.npmjs.com/package/amdiaz)
 
 The `bio-cli` package is a command line interface tool that displays a brief summary of a user's curriculum vitae (CV) and contact information in the console. It allows users to easily showcase their professional experience and skills in a clear and concise manner.
 
