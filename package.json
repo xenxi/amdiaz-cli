@@ -1,6 +1,6 @@
 {
   "name": "amdiaz",
-  "version": "1.0.12-beta.0",
+  "version": "1.0.13-beta.0",
   "description": "The amdiaz-cli package is a command line interface tool that displays a brief summary of amdiaz as a developer",
   "main": "dist/bio.js",
   "bin": "dist/bio.js",
