@@ -44,9 +44,13 @@ printCard(profile, {
     })
     .withCustom({
       label: "👀 Take a peek at my work wizardry!",
-      completionText:
-        "Code completed with flying colors!",
-      action: () => printExperiences(),
+      completionText: "Code completed with flying colors!",
+      action: printExperiences,
+    })
+    .withCustom({
+      label: "🎩 Behind the Scenes: Code Conjurer",
+      completionText: "May the code be with you",
+      action: printAboutMe,
     })
     .withExit({
       label: "👋 Goodbye, world...",
@@ -54,7 +58,13 @@ printCard(profile, {
         "Wishing you a debugging-free day. See you in the next coding adventure!",
     }),
 });
-
+function printAboutMe(): void {
+  console.log("\n");
+  console.log(
+    "I am a senior software developer with a passion for technology and a focus on continuous improvement. I consider myself a flexible, optimistic, and creative person, with a constant desire to learn and overcome challenges. My goal is to apply my knowledge, experience, and skills to contribute to the success of projects in a motivating and rewarding environment. I have a strong background in web and mobile application development, as well as in the implementation of scalable architectures and clean design principles. Additionally, I am passionate about leading a balanced life, enjoying sports, family, friends, and overall happiness."
+  );
+  console.log("\n");
+}
 function printExperiences(): void {
   amdiazExperiences.forEach((experience) => {
     console.log("\n");
