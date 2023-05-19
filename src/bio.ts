@@ -46,7 +46,7 @@ printCard(profile, {
       label: "👀 Take a peek at my work wizardry!",
       completionText:
         "The elusive resume seems to have vanished, but fear not! It's a work in progress, so stay tuned and watch this space!",
-      action: () => printResume(),
+      action: () => printExperiences(),
     })
     .withExit({
       label: "👋 Goodbye, world...",
@@ -54,7 +54,8 @@ printCard(profile, {
         "Wishing you a debugging-free day. See you in the next coding adventure!",
     }),
 });
-function printResume(): void {
+
+function printExperiences(): void {
   amdiazExperiences.forEach((experience) => {
     console.log("\n");
     console.log(
