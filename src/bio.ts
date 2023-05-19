@@ -45,7 +45,7 @@ printCard(profile, {
     .withCustom({
       label: "👀 Take a peek at my work wizardry!",
       completionText:
-        "The elusive resume seems to have vanished, but fear not! It's a work in progress, so stay tuned and watch this space!",
+        "Code completed with flying colors!",
       action: () => printExperiences(),
     })
     .withExit({
